@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="420.0" minWidth="700.0" prefHeight="420.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booking.controllers.RoomSceneController">
+   <children>
+      <Label layoutX="43.0" layoutY="30.0" text="ADD/UPDATE SHOW ROOM :">
+         <font>
+            <Font name="System Italic" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveRoomButton" layoutX="528.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#actionSaveRoom" prefHeight="31.0" prefWidth="138.0" text="SAVE" />
+      <Label layoutX="67.0" layoutY="162.0" text="Room name : " />
+      <Label layoutX="67.0" layoutY="222.0" text="Number of seats : " />
+      <TextField fx:id="roomnameText" layoutX="243.0" layoutY="158.0" />
+      <TextField fx:id="seatsText" layoutX="243.0" layoutY="218.0" />
+   </children>
+</AnchorPane>

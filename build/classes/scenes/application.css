@@ -1,0 +1,12 @@
+
+.main-background-color {
+	-fx-background-color : black;
+}
+
+.main-title {
+	-fx-text-fill : white;
+}
+
+.nav-button {
+	-fx-fill-width : true;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="420.0" minWidth="700.0" prefHeight="420.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booking.controllers.BookPayementSceneController">
+    <stylesheets>
+        <URL value="@application.css" />
+    </stylesheets>
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dadde1" height="110.0" layoutX="104.0" layoutY="232.0" stroke="BLACK" strokeType="INSIDE" width="506.0" />
+      <ImageView fitHeight="394.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/curtains.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="105.0" layoutY="7.0" text="Payement : ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="validateButton" layoutX="545.0" layoutY="362.0" mnemonicParsing="false" onAction="#actionValidate" prefHeight="32.0" prefWidth="117.0" text="Finish Book" />
+      <Label layoutX="96.0" layoutY="49.0" text="First Name : " />
+      <Label layoutX="253.0" layoutY="49.0" text="Last Name : " />
+      <Label layoutX="431.0" layoutY="49.0" text="Email : " />
+      <Label layoutX="137.0" layoutY="248.0" text="Card Number : " />
+      <Label layoutX="137.0" layoutY="279.0" text="Expiration date : " />
+      <Label layoutX="137.0" layoutY="309.0" text="CVC : " />
+      <TextField fx:id="cardnumberText" layoutX="270.0" layoutY="244.0" prefHeight="25.0" prefWidth="223.0" />
+      <TextField layoutX="270.0" layoutY="275.0" prefHeight="25.0" prefWidth="165.0" />
+      <TextField layoutX="270.0" layoutY="305.0" />
+      <TextField fx:id="firstnameText" layoutX="170.0" layoutY="45.0" prefHeight="25.0" prefWidth="74.0" />
+      <TextField fx:id="emailText" layoutX="476.0" layoutY="45.0" prefHeight="25.0" prefWidth="124.0" />
+      <TextField fx:id="lastnameText" layoutX="323.0" layoutY="45.0" prefHeight="25.0" prefWidth="103.0" />
+      <Line endX="398.0" layoutX="197.0" layoutY="92.0" startX="-5.0" />
+      <Label layoutX="96.0" layoutY="117.0" text="Username : " />
+      <Label layoutX="348.0" layoutY="117.0" text="Password : " />
+      <TextField fx:id="usernameText" layoutX="170.0" layoutY="113.0" />
+      <PasswordField fx:id="passwordText" layoutX="432.0" layoutY="113.0" prefHeight="25.0" prefWidth="165.0" />
+      <Label layoutX="96.0" layoutY="83.0" text="Create account : " />
+      <Label layoutX="96.0" layoutY="189.0" text="Total to pay : " />
+      <Label fx:id="totalLabel" layoutX="170.0" layoutY="188.0" prefHeight="17.0" prefWidth="149.0" text="0" textFill="#eb1616">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="154.0" text="Promo code : " />
+      <TextField fx:id="promoCodeText" layoutX="171.0" layoutY="150.0" prefHeight="25.0" prefWidth="165.0" />
+      <Button fx:id="applyButton" layoutX="349.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#actionApplyClick" text="Apply" />
+   </children>
+</AnchorPane>

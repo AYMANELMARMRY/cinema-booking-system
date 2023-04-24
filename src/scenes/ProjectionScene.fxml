@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="420.0" minWidth="700.0" prefHeight="420.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booking.controllers.ProjectionSceneController">
+   <children>
+      <Label layoutX="43.0" layoutY="30.0" text="ADD/UPDATE PROJECTION :">
+         <font>
+            <Font name="System Italic" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveProjectionButton" layoutX="528.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#actionSaveProjection" prefHeight="31.0" prefWidth="138.0" text="SAVE" />
+      <Label layoutX="43.0" layoutY="103.0" text="Movie : " />
+      <Label layoutX="43.0" layoutY="140.0" text="Room : " />
+      <Label layoutX="43.0" layoutY="175.0" text="Date &amp; Time : " />
+      <Label layoutX="43.0" layoutY="210.0" text="Price : " />
+      <TextField fx:id="priceText" layoutX="152.0" layoutY="206.0" />
+      <ComboBox fx:id="moviesCombo" layoutX="152.0" layoutY="99.0" prefHeight="25.0" prefWidth="302.0" />
+      <ComboBox fx:id="roomsCombo" layoutX="152.0" layoutY="136.0" prefHeight="25.0" prefWidth="199.0" />
+      <DatePicker fx:id="datePicker" layoutX="152.0" layoutY="171.0" />
+      <ComboBox fx:id="hoursCombo" layoutX="351.0" layoutY="171.0" prefHeight="25.0" prefWidth="64.0" />
+      <ComboBox fx:id="minutesCombo" layoutX="433.0" layoutY="171.0" prefHeight="25.0" prefWidth="64.0" />
+      <Label layoutX="419.0" layoutY="175.0" text="H" />
+      <Label layoutX="502.0" layoutY="175.0" text="M" />
+   </children>
+</AnchorPane>
